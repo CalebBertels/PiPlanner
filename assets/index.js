@@ -15,5 +15,5 @@ function submitfunction() {
 }
 
 socket.on('chatMessage', function (msg) {
-  $('#display').append('<p>' + msg + '</p>');
+  $('#display').replaceWith('<h2 id="display">' + msg + '</h2>');
 });
