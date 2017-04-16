@@ -1,0 +1,17 @@
+{
+    "name": "PiPlanner",
+    "version": "0.0.1",
+    "description": "App for Pi Planner",
+    "main": "app.js",
+    "dependencies": {
+        "express": "latest",
+        "socket.io": "latest"
+    },
+    "author": "Caleb Bertels",
+    "homepage": "https://github.com/CalebBertels/PiPlanner",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/CalebBertels/PiPlanner"
+    },
+     "license": "Apache-2.0"
+}
