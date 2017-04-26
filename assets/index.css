@@ -1,0 +1,20 @@
+.button {
+    background-color: #FF3200;
+    color: white;
+    padding: 15px 32px;
+    font-size: 16px;
+    border-radius: 25px;
+}
+
+.form {
+    display: inline-block;
+}
+
+.form1{
+    display: block;
+}
+
+input[type=text] {
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}

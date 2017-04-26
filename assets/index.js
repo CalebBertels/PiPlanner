@@ -14,6 +14,42 @@ function submitTextFunction() {
   return false;
 }
 
+function submitTextFunction1() {
+  var comment = $('#comment1').val();
+  if (comment != '') {
+    socket.emit('updateText', comment);// can handle more than 1 item ...
+  }
+  // what language and selector is used below?
+  // set the value to an empty string and
+  // focus on the message box again
+  $('#comment1').val('').focus();
+  return false;
+}
+
+function submitTextFunction2() {
+  var comment = $('#comment2').val();
+  if (comment != '') {
+    socket.emit('updateText', comment);// can handle more than 1 item ...
+  }
+  // what language and selector is used below?
+  // set the value to an empty string and
+  // focus on the message box again
+  $('#comment2').val('').focus();
+  return false;
+}
+
+function submitTextFunction3() {
+  var comment = $('#comment3').val();
+  if (comment != '') {
+    socket.emit('updateText', comment);// can handle more than 1 item ...
+  }
+  // what language and selector is used below?
+  // set the value to an empty string and
+  // focus on the message box again
+  $('#comment3').val('').focus();
+  return false;
+}
+
 function submitPictureFunction() {
   var picture = $('#picture').val();
   if (picture != '') {
