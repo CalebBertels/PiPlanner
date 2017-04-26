@@ -15,9 +15,15 @@ app.get('/display', function (req, res) {
 });
 
 io.on('connection', function(socket){ 
-      socket.on('chatMessage', function(msg){
-           io.emit('chatMessage', msg);  
-      });
+      socket.on('updateText', function(msg){
+           io.emit('updateText', msg);  
+      });    
+});
+
+io.on('connection', function(socket){ 
+      socket.on('updatePicture', function(msg){
+           io.emit('updatePicture', msg);  
+      });    
 });
 
 server.listen(8081, function () {

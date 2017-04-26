@@ -22,8 +22,17 @@
                 <h1>Pi Planner</h1>
                 <div class="form-group">
                     <label>What would you like to input:</label>
-                    <form id="form" action="" onsubmit="return submitfunction();">
-                        <input id="comment" autocomplete="off" placeholder="Type your message here.."/><input type="submit" id="button" value="Send" />
+                    <form id="form" action="" onsubmit="return submitTextFunction();">
+                        <input id="comment" autocomplete="off" placeholder="Type your message here.." /><input type="submit"
+                            id="button" value="Send" />
+                    </form>
+                    <br>
+                </div>
+                <div class="form-group">
+                    <label>Enter a picture link:</label>
+                    <form id="form" action="" onsubmit="return submitPictureFunction();">
+                        <input id="picture" autocomplete="off" placeholder="Enter Your Link Here" /><input type="submit"
+                            id="button" value="Send" />
                     </form>
                     <br>
                 </div>
