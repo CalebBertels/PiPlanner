@@ -1,8 +1,11 @@
+/* Change these if you would like to resize images */
 img{
     height: 320px;
     width: 480px;
 }
 
+
+/* Change CSS here to edit the display text */
 h2{
     text-align: center;
     color: #FF3200;

@@ -1,15 +1,11 @@
-var socket = io();  //use our helpful socket.io library to create an event emitter
-
-// emit a new chatMessage event from the client......
+var socket = io(); 
 
 function submitTextFunction() {
   var comment = $('#comment').val();
   if (comment != '') {
-    socket.emit('updateText', comment);// can handle more than 1 item ...
+    socket.emit('updateText', comment);
   }
-  // what language and selector is used below?
-  // set the value to an empty string and
-  // focus on the message box again
+
   $('#comment').val('').focus();
   return false;
 }
@@ -17,11 +13,9 @@ function submitTextFunction() {
 function submitTextFunction1() {
   var comment = $('#comment1').val();
   if (comment != '') {
-    socket.emit('updateText', comment);// can handle more than 1 item ...
+    socket.emit('updateText', comment);
   }
-  // what language and selector is used below?
-  // set the value to an empty string and
-  // focus on the message box again
+
   $('#comment1').val('').focus();
   return false;
 }
@@ -29,11 +23,9 @@ function submitTextFunction1() {
 function submitTextFunction2() {
   var comment = $('#comment2').val();
   if (comment != '') {
-    socket.emit('updateText', comment);// can handle more than 1 item ...
+    socket.emit('updateText', comment);
   }
-  // what language and selector is used below?
-  // set the value to an empty string and
-  // focus on the message box again
+
   $('#comment2').val('').focus();
   return false;
 }
@@ -41,11 +33,9 @@ function submitTextFunction2() {
 function submitTextFunction3() {
   var comment = $('#comment3').val();
   if (comment != '') {
-    socket.emit('updateText', comment);// can handle more than 1 item ...
+    socket.emit('updateText', comment);
   }
-  // what language and selector is used below?
-  // set the value to an empty string and
-  // focus on the message box again
+
   $('#comment3').val('').focus();
   return false;
 }
@@ -53,11 +43,9 @@ function submitTextFunction3() {
 function submitPictureFunction() {
   var picture = $('#picture').val();
   if (picture != '') {
-    socket.emit('updatePicture', picture);// can handle more than 1 item ...
+    socket.emit('updatePicture', picture);
   }
-  // what language and selector is used below?
-  // set the value to an empty string and
-  // focus on the message box again
+
   $('#picture').val('').focus();
   return false;
 }
